@@ -1,0 +1,134 @@
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/Bureau$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~$ curl -L -o planets.zip https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0    167      0 --:--:-- --:--:-- --:--:--   167
+100   159  100   159    0     0    133      0  0:00:01  0:00:01 --:--:--   133
+100  293k  100  293k    0     0   207k      0  0:00:01  0:00:01 --:--:-- 1480k
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~$ unzip planets.zip
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~$ cd planets
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ mkdir real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ mkdir fictional
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ mkdir inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ mkdir terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ mkdir gas-giants
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ mkdir dwarf-planets
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ mv mercury.jpeg earth.jpeg pluto.jpeg jupiter.jpeg venus.jpeg mars.jpeg uranus.jpeg neptune.jpeg saturn.jpeg real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ ls
+dwarf-planets  jupiter.jpeg  neptune.jpeg  terrestrial
+earth.jpeg     mars.jpeg     pluto.jpeg    uranus.jpeg
+gas-giants     mercury.jpeg  saturn.jpeg   venus.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ mv earth.jpeg venus.jpeg mars.jpeg mercury.jpeg terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ ls
+earth.jpeg  mars.jpeg  mercury.jpeg  venus.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ mv jupiter.jpeg saturn.jpeg uranus.jpeg neptune.jpeg gas-giants
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd gas-giants
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/gas-giants$ ls
+jupiter.jpeg  neptune.jpeg  saturn.jpeg  uranus.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/gas-giants$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ mv pluto.jpeg dwarf-planets
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd dwarf-planets
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/dwarf-planets$ ls
+pluto.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/dwarf-planets$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cp earth.jpeg inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd fictional
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg ../inhabited
+cp: impossible d'évaluer 'arrakis.jpeg': Aucun fichier ou dossier de ce type
+cp: impossible d'évaluer 'coruscant.jpeg': Aucun fichier ou dossier de ce type
+cp: impossible d'évaluer 'cybertron.jpeg': Aucun fichier ou dossier de ce type
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ mv arrakis.jpeg cybertron.jpeg coruscant.jpeg fictional
+mv: la cible 'fictional' n'est pas un répertoire
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ mv arrakis.jpeg cybertron.jpeg coruscant.jpeg fictional
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd fictional
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cp earth.jpeg inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd fictional
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg inhabited
+cp: la cible 'inhabited' n'est pas un répertoire
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ ls
+fictional  inhabited  real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd fictional
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cp arrakis.jpeg coruscant.jpeg cybertron.jpeg ../inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/fictional$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/inhabited$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/inhabited$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd terrestrial
+bash: cd: terrestrial: Aucun fichier ou dossier de ce type
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ ls
+fictional  inhabited  real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/inhabited$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cp earth.jpeg ../../inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real/terrestrial$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd inhabited
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/inhabited$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  earth.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/inhabited$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ cd real
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ rm -r dwarf-planets
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ ls
+gas-giants  terrestrial
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets/real$ cd ..
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ find
+.
+./inhabited
+./inhabited/arrakis.jpeg
+./inhabited/earth.jpeg
+./inhabited/cybertron.jpeg
+./inhabited/coruscant.jpeg
+./real
+./real/gas-giants
+./real/gas-giants/uranus.jpeg
+./real/gas-giants/saturn.jpeg
+./real/gas-giants/jupiter.jpeg
+./real/gas-giants/neptune.jpeg
+./real/terrestrial
+./real/terrestrial/mercury.jpeg
+./real/terrestrial/earth.jpeg
+./real/terrestrial/inhabited
+./real/terrestrial/mars.jpeg
+./real/terrestrial/venus.jpeg
+./fictional
+./fictional/arrakis.jpeg
+./fictional/cybertron.jpeg
+./fictional/coruscant.jpeg
+thomas@thomas-VivoBook-ASUSLaptop-X712DA-M712DA:~/planets$ 
+
